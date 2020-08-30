@@ -1,0 +1,22 @@
+html, body {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	background: #7159c1;
+}
+header {
+	background:#BEAFEC;
+	height:100px;
+}
+main {
+	background:#947FD7;
+	height:100px;
+}
+aside {
+	background:#573CAC;
+	height:100px;
+}
+footer {
+	background:#BEAFEC;
+	height:100px;
+}
