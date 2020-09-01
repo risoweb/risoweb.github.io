@@ -2,7 +2,11 @@ html, body {
 	margin:0;
 	padding:0;
 	box-sizing:border-box;
+<<<<<<< HEAD
 	background: #715900;
+=======
+	background: "tomato";
+>>>>>>> 7a643887ba74db1a6d130bc6e66dbfa232689fd0
 }
 .container {
 	display:grid;
