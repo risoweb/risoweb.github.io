@@ -4,19 +4,31 @@ html, body {
 	box-sizing:border-box;
 	background: #7159c1;
 }
+.container {
+	display:grid;
+	grid-template-columns: 3fr 1fr;
+	grid-template-rows: 20vh 70vh 10vh;
+	grid-template-areas: "h h"
+				"m a"
+				"f f"
+
+}
+
 header {
 	background:#BEAFEC;
-	height:100px;
+	grid-area: h;
 }
 main {
 	background:#947FD7;
-	height:100px;
+	grid-area: m;
 }
 aside {
 	background:#573CAC;
-	height:100px;
+	grid-area: a;
 }
 footer {
 	background:#BEAFEC;
-	height:100px;
+	grid-area: f;
 }
+
+
