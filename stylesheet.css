@@ -1,38 +1,41 @@
-html, body {
-	margin:0;
-	padding:0;
-	box-sizing:border-box;
-<<<<<<< HEAD
-	background: #715900;
-=======
-	background: "tomato";
->>>>>>> 7a643887ba74db1a6d130bc6e66dbfa232689fd0
-}
-.container {
-	display:grid;
-	grid-template-columns: 3fr 1fr;
-	grid-template-rows: 20vh 70vh 10vh;
-	grid-template-areas: "h h"
-				"m a"
-				"f f"
-
+body, 
+ul, 
+li, 
+p {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  font-size:1.2rem;
+  font-family: Arial;
 }
 
-header {
-	background:#BEAFEC;
-	grid-area: h;
-}
-main {
-	background:#947FD7;
-	grid-area: m;
-}
-aside {
-	background:#573CAC;
-	grid-area: a;
-}
-footer {
-	background:#BEAFEC;
-	grid-area: f;
+a {
+  text-decoration: none;
+  color: white;
 }
 
+h1 {
+  text-align: center;
+  margin-top: 100px;
+}
 
+.header {
+  background: #573CAC;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu li {
+  margin-left: 10px;
+}
+
+.menu li a{
+  display: block;
+  padding: 10px;
