@@ -6,12 +6,15 @@ p {
   padding: 0px;
   list-style: none;
   font-size:1.2rem;
+  color: #3C1E9D;
   font-family: Georgia;
+  text-align: center;
 }
 
 a {
   text-decoration: none;
   color: white;
+  text-align: center;
 }
 
 h1 {
@@ -45,9 +48,14 @@ header {
   padding: 10px;
 }
 .lista{
+  padding: 100px;
   background: #3C1E9D;
 }
 
+.paragrafo{
+  text-align: right;
+  padding: 100px;
+}
 /* CSS FLEXBOX ok */
 .container {
   background: #BEAFEC;
