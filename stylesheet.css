@@ -1,42 +1,40 @@
-body, 
-ul, 
-li, 
-p {
-  margin: 0px;
-  padding: 0px;
-  list-style: none;
-  font-size:1.2rem;
-  color: #3C1E9D;
-  font-family: Georgia;
-  text-align: center;
-}
+@charset "UTF-8";
+
+*, html, body {
+	margin:0;
+	padding:0;
+	}
 
 a {
   text-decoration: none;
   color: white;
+  
   text-align: center;
 }
 
 h1 {
-  text-align: center;
-  margin-top: 100px;
+  text-align: right;
+  color: white;
+}
+
+p {
+  text-align: right;
+  color: white;
 }
 
 img {
   max-width: 100%;
-  display: block;
+  float: center;
 }
 
-header {
-  display:flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
+.header {
+  padding: 10px;
+ 
 }
 
 .menu {
-  display: flex;
+  display: flex; 
+  justify-content: flex-end;
 }
 
 .menu li {
@@ -45,31 +43,71 @@ header {
 
 .menu li a {
   display: block;
-  padding: 10px;
-}
-.lista{
-  padding: 100px;
-  background: #3C1E9D;
 }
 
-.paragrafo{
-  text-align: right;
-  padding: 100px;
-}
-/* CSS FLEXBOX ok */
-.container {
-  background: #BEAFEC;
-  display: grid;
-  grid-template-columns: 1fr 3fr
+.imgmenu {
+  position: absolute;
+  top: 20px;
 }
 
-.flex {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 auto;
-}
+... /* mais regras CSS reset */
 
-.flex > div {
-  flex: 1 1 200px;
-  margin: 10px;
+/* regra para o box-sizing */
+/*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
 }
+/* regra para o clear float */
+.cf:before,
+.cf:after {content: " ";display: table;}
+.cf:after {clear: both;}
+.cf {*zoom: 1;}
+#lateral {
+	padding:0 50px 0 0;
+	-moz-transition: all 0.5s ease;
+		-webkit-transition: all 0.5s ease;
+			-o-transition: all 0.5s ease;
+				transition: all 0.5s ease;
+	font-size:1.2em;
+	background:rgba(44,62,80,0.5);
+	background-image: -moz-linear-gradient(135deg, rgba(3,8,12,0.5), rgba(16,57,79, 0.5));
+     	background-image: -webkit-linear-gradient(135deg, rgba(3,8,12,0.5), rgba(16,57,79, 0.5));
+      	background-image: -o-linear-gradient(135deg, rgba(3,8,12,0.5), rgba(16,57,79, 0.5) );
+       	background-image: -ms-linear-gradient(135deg, rgba(3,8,12,0.5), rgba(16,57,79, 0.5));
+        background-image: linear-gradient(135deg, rgba(3,8,12,0.5), rgba(16,57,79, 0.5));
+	height:100%;
+	overflow:hidden;
+	width:370px; 
+	position:fixed;
+	top:0;
+	left:-320px;
+	}
+#lateral:before {
+	z-index:1000;
+	content: url(logo.png);
+	font-size:4em;
+	color:white;
+	position:fixed;
+	left:4px;
+	top:45px;
+	}
+#lateral:hover:before, #lateral:focus:before {
+left:-500px
+	}
+#lateral:hover, #lateral:focus,  #lateral:active  {
+	overflow-y:scroll;
+	-moz-transform: translate(320px, 0);
+		-webkit-transform: translate(320px, 0);
+			-o-transform: translate(320px, 0);
+				transform: translate(320px, 0);
+	padding-right:0;
+	}
+#container-imagem {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    /* adicionando imagem de fundo */
+    background: url('background.gif');
+    background-size: cover;
+}	
