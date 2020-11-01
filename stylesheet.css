@@ -32,8 +32,21 @@ span {
   text-aling: center;
 }
 
-.header {
+aside {
+  float: right;
+  padding: 20px;
+  width: 35%;
+  
+}
 
+footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+
+}
+
+.header {
   padding: 20px;
  
 }
@@ -51,11 +64,23 @@ span {
   display: block;
 }
 
-.imgmenu {
+.img-menu {
   position: absolute;
   top: 80px;
-  left: 150px;
+  left: 160px;
 }
+
+.text-p {
+  float: right;
+  text-align: right;
+  font-size: .9rem;
+}
+
+.text-footer {
+  text-align: center;
+  font-size: .9rem;
+}
+
 
 ... /* mais regras CSS reset */
 
