@@ -1,14 +1,18 @@
 @charset "UTF-8";
 
-*, html, body {
-	margin:0;
-	padding:0;
+*, html, body, ul, li, p {
+	margin:0px;
+	padding:0px;
+	list-style: none;
+	font-size: 1.2rem;
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+	text-align: center;
 	}
 
 a {
   text-decoration: none;
   color: white;
-  
   text-align: center;
 }
 
@@ -17,18 +21,19 @@ h1 {
   color: white;
 }
 
-p {
-  text-align: right;
-  color: white;
-}
-
 img {
   max-width: 100%;
-  float: center;
+}
+
+span {
+  position: absolute;
+  top: 200px;
+  text-aling: center;
 }
 
 .header {
-  padding: 10px;
+
+  padding: 20px;
  
 }
 
@@ -47,7 +52,8 @@ img {
 
 .imgmenu {
   position: absolute;
-  top: 20px;
+  top: 80px;
+  left: 150px;
 }
 
 ... /* mais regras CSS reset */
@@ -85,7 +91,7 @@ img {
 	}
 #lateral:before {
 	z-index:1000;
-	content: url(logo.png);
+	content: url(ico.png);
 	font-size:4em;
 	color:white;
 	position:fixed;
@@ -96,7 +102,6 @@ img {
 left:-500px
 	}
 #lateral:hover, #lateral:focus,  #lateral:active  {
-	overflow-y:scroll;
 	-moz-transform: translate(320px, 0);
 		-webkit-transform: translate(320px, 0);
 			-o-transform: translate(320px, 0);
