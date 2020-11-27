@@ -52,7 +52,7 @@ footer {
 
 .menu {
   display: flex; 
-  justify-content: flex-end;
+  flex-direction: row-reverse;
 }
 
 .menu li {
