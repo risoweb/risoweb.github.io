@@ -45,6 +45,11 @@ footer {
 
 }
 
+form{
+	text-align: center;
+	font-weight: bold;
+}
+
 .header {
   padding: 20px;
  
@@ -83,14 +88,10 @@ footer {
 .container {
   width: 50%;
   margin: 0 auto;
-  text-align: center;
-  font-weight: bold;
 }
 
 .form-contact{
   width: 100%;
-  text-align: center;
-  font-weight: bold;
 }
 
 .form-contact-input{
