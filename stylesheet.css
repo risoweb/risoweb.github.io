@@ -87,12 +87,13 @@ footer {
 
 .form-contact{
   width: 100%;
-  font-family: "Arial", Times, serif;
+  text-align: center;
+  text-align: center;
 }
 
 .form-contact-input{
   width: 100%;
-  color: #292929;
+  color: #000000;
   font-size: 18px;
   background-color: #E9E9E9;
   border: 1px solid #E9E9E9;
