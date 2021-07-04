@@ -1,6 +1,6 @@
 <?php
       // cria a conexao mysql
-      $conexao = mysqli_connect('https://remotemysql.com/phpmyadmin/index.php?db=FKEREniIkm', 'FKEREniIkm', 'ohfiqc851X', 'FKEREniIkm');
+      $conexao = mysqli_connect('https://remotemysql.com/phpmyadmin/index.php', 'FKEREniIkm', 'ohfiqc851X', 'FKEREniIkm');
       
       // charset
       mysqli_set_charset($conexao, 'utf8');
