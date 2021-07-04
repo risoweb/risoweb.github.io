@@ -1,5 +1,5 @@
 <?php
-$servername = "www.phpmyadmin.co";
+$servername = "mysql.phpmyadmin.co";
 $database = "sql10422696";
 $username = "sql10422696";
 $password = "c81SexNTlP";
