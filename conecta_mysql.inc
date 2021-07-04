@@ -1,6 +1,6 @@
 <?php
       // cria a conexao mysql
-      $conexao = mysqli_connect('sql10.freemysqlhosting.net', 'sql10422696', 'c81SexNTlP', 'sql10422696');
+      $conexao = mysqli_connect('remotemysql.com', 'FKEREniIkm', 'ohfiqc851X', 'FKEREniIkm');
       
       // charset
       mysqli_set_charset($conexao, 'utf8');
