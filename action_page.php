@@ -1,5 +1,5 @@
 <?php
-$servername = "mysql.phpmyadmin.co";
+$servername = "sql10.freemysqlhosting.net";
 $database = "sql10422696";
 $username = "sql10422696";
 $password = "c81SexNTlP";
