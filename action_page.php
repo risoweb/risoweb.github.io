@@ -12,7 +12,7 @@ if (!$conn) {
  
 echo "Connected successfully";
  
-$sql = "INSERT INTO geral (cliente, produto, cor, pagamento, obs, entrega) VALUES ('ok', 'ok', 'ok', 00, ok, 00)";
+$sql = "INSERT INTO geral (cliente, produto, cor, pagamento, obs, entrega) VALUES ('ok', 'ok', 'ok', '00', 'ok', '00')";
 if (mysqli_query($conn, $sql)) {
       echo "New record created successfully";
 } else {
