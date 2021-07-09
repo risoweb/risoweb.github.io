@@ -7,16 +7,6 @@
 	<title>Ilson Ricardo - Designer Gráfico</title>
 	<link rel="stylesheet" href="stylesheet.css" type="text/css" media="screen">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
-	 <script>
-            function search(query){
-                if(query.slice(0, 7) == "http://"){
-                    window.location.href = query
-                }
-                else{
-                    window.location.href = "https://www.google.com/search?q=" + query
-                }
-            }
-        </script>
     </head> 
     <body id="container-imagem"> 
 	<header class="header">
@@ -48,14 +38,14 @@
 	<aside>
 		<div class="container">			
 			<h1>Produtos em geral</h1>
-			<form name="gform" id="gform" enctype="text/plain" action="https://zapier.com/shared/45c489621fa2b98d75dec97c2d612145b27d2283" target="hidden_iframe" onsubmit="submitted=true;">				
-				<input type="text" class="form-contact-input" name="cliente" placeholder="Cliente" required><br>				
-				<input type="text" class="form-contact-input" name="produto" placeholder="Produto" required><br>
-				<input type="text" class="form-contact-input" name="cor" placeholder="Cor" required><br>
-				<input type="text" class="form-contact-input" name="pagamento" placeholder="Pagamento" required><br>
-				<input type="text" class="form-contact-input" name="obs" placeholder="Observação" required><br>
-				<input type="text" class="form-contact-input" name="entrega" placeholder="Entrega" required><br>
-				<button type="submit" class="form-contact-button" onclick="search(document.getElementById('search').value)">Enviar</button>
+			<form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScODwyB5YY2aw7y9LyQjU4M_BOiKnDuXk8XVJg-VLRtC5ymJQ/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">				
+				<input type="text" class="form-contact-input" name="entry.1849027359" id="entry.1849027359" placeholder="Cliente" required><br>				
+				<input type="text" class="form-contact-input" name="entry.314605492" id="entry.314605492" placeholder="Produto" required><br>
+				<input type="text" class="form-contact-input" name="entry.634864141" id="entry.634864141"placeholder="Cor" required><br>
+				<input type="text" class="form-contact-input" name="entry.1154382912" id="entry.1154382912" placeholder="Pagamento" required><br>
+				<input type="text" class="form-contact-input" name="entry.1346023968" id="entry.1346023968" placeholder="Observação" required><br>
+				<input type="text" class="form-contact-input" name="entry.1983150434" id="entry.1983150434" placeholder="Entrega" required><br>
+				<button type="submit" class="form-contact-button">Enviar</button>
 			</form>
 			<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
 		</div>
