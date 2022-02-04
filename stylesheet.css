@@ -117,58 +117,6 @@ button {
   text-indent: 20px;
 }
 
-... /* mais regras CSS reset */
-
-/* regra para o box-sizing */
-/*, *:before, *:after {
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
-}
-/* regra para o clear float */
-.cf:before,
-.cf:after {content: " ";display: table;}
-.cf:after {clear: both;}
-.cf {*zoom: 1;}
-#lateral {
-	padding:0 50px 0 0;
-	-moz-transition: all 0.5s ease;
-		-webkit-transition: all 0.5s ease;
-			-o-transition: all 0.5s ease;
-				transition: all 0.5s ease;
-	font-size:1.2em;
-	background:rgba(44,62,80,0.5);
-	background-image: -moz-linear-gradient(135deg, rgba(3,8,12,0.5), rgba(16,57,79, 0.5));
-     	background-image: -webkit-linear-gradient(135deg, rgba(3,8,12,0.5), rgba(16,57,79, 0.5));
-      	background-image: -o-linear-gradient(135deg, rgba(3,8,12,0.5), rgba(16,57,79, 0.5) );
-       	background-image: -ms-linear-gradient(135deg, rgba(3,8,12,0.5), rgba(16,57,79, 0.5));
-        background-image: linear-gradient(135deg, rgba(3,8,12,0.5), rgba(16,57,79, 0.5));
-	height:100%;
-	overflow:hidden;
-	width:370px; 
-	position:fixed;
-	top:0;
-	left:-320px;
-	}
-#lateral:before {
-	z-index:1000;
-	content: url(ico.png);
-	font-size:4em;
-	color:white;
-	position:fixed;
-	left:4px;
-	top:45px;
-	}
-#lateral:hover:before, #lateral:focus:before {
-left:-500px
-	}
-#lateral:hover, #lateral:focus,  #lateral:active  {
-	-moz-transform: translate(320px, 0);
-		-webkit-transform: translate(320px, 0);
-			-o-transform: translate(320px, 0);
-				transform: translate(320px, 0);
-	padding-right:0;
-	}
 #container-imagem {
     position: relative;
     height: 100vh;
