@@ -8,14 +8,14 @@
 	list-style: none;
 	font-size: 1.2rem;
 	font-family: 'Montserrat', sans-serif;
-	color: white;
 	text-align: center;
 }
 body {
 	background-color: darkblue;
+	color: white;
 }
 .header {
-  padding: 20px;
+  background: linear-gradient (yellow, red);
  
 }
 
