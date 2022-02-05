@@ -15,7 +15,8 @@ body {
 	color: white;
 }
 .header {
-  background: linear-gradient (yellow, red);
+	height: 100vh;
+  	background: linear-gradient (yellow, red);
  
 }
 
