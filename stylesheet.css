@@ -1,3 +1,4 @@
+
 @charset "UTF-8";
 
 
@@ -11,12 +12,9 @@
 	text-align: center;
 }
 body {
-	background-color: black;
+	background: black;
 	color: white;
-}
-header {
-	height: 100%;
-  	background: linear-gradient (yellow, red);
- 
+	height: 100vh;
+	background: linear-gradient(greenyellow, darkgreen);
 }
 
