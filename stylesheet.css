@@ -75,9 +75,9 @@ figcaption {
   display: block;
 }
 .wo-h3 {
-  margin-top: 3rem;
-  margin-bottom: 1rem;
-  padding-bottom: 1rem;
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
   border-bottom: 1px solid #e60012;
 }
 .c-label {
@@ -157,7 +157,7 @@ figcaption {
 .js-slider_indicator {
   position: absolute;
   left: 0;
-  top: 53%;
+  top: 63%;
   width: 100%;
   text-align: center;
 }
