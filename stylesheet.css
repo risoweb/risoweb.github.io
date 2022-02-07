@@ -28,7 +28,7 @@ input[type="radio"] {
 }
 .js-slider {
   position: relative;
-  width: 80%;
+  width: 70%;
   height: 100vh;
   margin: 0 auto;
 }
