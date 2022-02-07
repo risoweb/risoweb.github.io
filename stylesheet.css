@@ -22,6 +22,10 @@ li {
 input[type="radio"] {
   display: none;
 }
+.text-footer {
+  text-align: center;
+  font-size: .9rem;
+}
 .js-slider {
   position: relative;
   width: 80%;
