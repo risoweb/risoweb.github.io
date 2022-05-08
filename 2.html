@@ -1,30 +1,33 @@
 <!doctype html>
+</html>
+
+<!DOCTYPE html>
 <html>
     <head> 
 	<meta charset="UTF-8"> 
 	<meta name="description" content="Marcas corporativas com uso de tecnologias digitais para resultados de pesquisas  eficientes, Vídeos com imagens perfeitas, de qualidade e com tecnologias digitais e efeitos empolgantes, App para telefones móveis padronizados, com imagens e com tecnologia dinâmica, Software para computador pessoal com inteligência artificial, Modelagem arquitetônica com cálculo estrutural para demonstração ou avaliações de custos."> 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 	<title>Ilson Ricardo - Designer Gráfico</title>
+    </head>  
+    <body>
+        
+            <button>Change color</button>
 
-	    <script src="evento.js"></script>
-    </head> 
-    <body > 
-	<header class="header">
+        
+        
+            <script>
+                const btn = document.querySelector('button');
 
-	</header>
-	
-	<main>
-		<button> Mudar tema</buton>
-	</main>
-	<aside>
-	
-	</aside>
+function random(number) {
+  return Math.floor(Math.random() * (number+1));
+}
 
+btn.addEventListener('click', () => {
+  const rndCol = `rgb(${random(255)}, ${random(255)}, ${random(255)})`;
+  document.body.style.backgroundColor = rndCol;
+});
 
-	<footer>
-		<p class= "text-footer">Procurenos em nossas redes sociais</p>
-		<p class= "text-footer">Direitos Legais</p>
-	</footer>  
-	  
+            </script>
+        
     </body>
 </html>
