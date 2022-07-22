@@ -2,7 +2,7 @@ body {
 	background: black;
 	color: white;
 	height: 100vh;
-	background: linear-gradient(to top left, #241023 50%, #3d1539 50%);
+	background: linear-gradient(to top left, #3d1539 50%, #241023 50%);
 }
 img {
   width:auto;
