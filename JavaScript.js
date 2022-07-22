@@ -1,10 +1,10 @@
 const displayedImage = document.querySelector('.displayed-img');
 const thumbBar = document.querySelector('.thumb-bar');
-const images = [`https://raw.githubusercontent.com/risoweb/risoweb.github.io/master/pic1.jpg`, 
-                `https://raw.githubusercontent.com/risoweb/risoweb.github.io/master/pic2.jpg`, 
-                `https://raw.githubusercontent.com/risoweb/risoweb.github.io/master/pic3.jpg`, 
-                `https://raw.githubusercontent.com/risoweb/risoweb.github.io/master/pic4.jpg`, 
-                `https://raw.githubusercontent.com/risoweb/risoweb.github.io/master/pic5.jpg`];
+const images = [`https://raw.githubusercontent.com/risoweb/risoweb.github.io/master/pic1.png`, 
+                `https://raw.githubusercontent.com/risoweb/risoweb.github.io/master/pic2.png`, 
+                `https://raw.githubusercontent.com/risoweb/risoweb.github.io/master/pic3.png`, 
+                `https://raw.githubusercontent.com/risoweb/risoweb.github.io/master/pic4.png`, 
+                `https://raw.githubusercontent.com/risoweb/risoweb.github.io/master/pic5.png`];
 
 for (const image of images) {
   const newDiv = document.createElement('div');
