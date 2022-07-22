@@ -22,9 +22,8 @@ texto {
  display: flex;
  position: absolute;
 }
-h1 { text-align: center;
+p { text-align: center;
     font-family: Helvetica;
-	font-size: 12px;
     color: #FFF;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #000;
