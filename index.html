@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 	<title>Ilson Ricardo - Designer Gráfico</title>
 	<link rel="stylesheet" href="stylesheet.css" type="text/css" media="screen">
-	<script src="JavaScript.js" defer></script>
+
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
 
     </head> 
@@ -27,25 +27,8 @@
 <div class="thumb"></div>
 </div>
 </div>
-	   
-const displayedImage = document.querySelector('.displayed-img');
-const thumbBar = document.querySelector('.thumb-bar');
-const images = [`https://raw.githubusercontent.com/risoweb/risoweb.github.io/master/pic1.jpg`, 
-                `https://raw.githubusercontent.com/risoweb/risoweb.github.io/master/pic2.jpg`, 
-                `https://raw.githubusercontent.com/risoweb/risoweb.github.io/master/pic3.jpg`, 
-                `https://raw.githubusercontent.com/risoweb/risoweb.github.io/master/pic4.jpg`, 
-                `https://raw.githubusercontent.com/risoweb/risoweb.github.io/master/pic5.jpg`];
 
-for (const image of images) {
-  const newDiv = document.createElement('div');
-  newDiv.classList.add('thumb');
-  const newImage = document.createElement('img');
-  newImage.setAttribute('src', `${image}`);
-  newImage.addEventListener('click', e => displayedImage.src = e.target.src);
-  newDiv.appendChild(newImage);
-  thumbBar.appendChild(newDiv);
-}
 	    </main>
-
+<script src="JavaScript.js"></script>
     </body>
 </html>
