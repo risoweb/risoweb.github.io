@@ -55,13 +55,23 @@
                     name: 'Nate',
                     avatar: "http://www.croop.cl/UI/twitter/images/doug.jpg"
                 },
-                commnents: [{from: 'Ari', text: 'Me too!'}]
-            }
+                commnents: [{from: 'Play', text: 'Me too!'}]
+            },
+            {
+                timestamp: new Date().getTime(),
+                text: "Woke up early",
+                user: {
+                    id: 2,
+                    name: 'Play',
+                    avatar: "http://www.croop.cl/UI/twitter/images/doug.jpg"
+                },
+                commnents: [{from: 'Nate', text: 'Jealous!'}]
+            },
             ]
 
             class Content extends React.Component {
                 render() {
-                    const {activities} = this.props;
+                    const {activity} = this.props;
                     return (
                         <div className="content">
                             <div className="line"></div>
