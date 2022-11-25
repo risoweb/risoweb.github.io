@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Componente React</title>
+        <title>Hello Word!</title>
         <!-- Tags script que inclui o React-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react-dom.min.js"></script>
@@ -16,91 +16,46 @@
                     return (
                         <div className="notificationsFrame">
                             <div className="panel">
-                                <Header title="Timeline"/>
-                                <Header title="Profile"/>
-                                <Header title="Settings"/>
-                                <Header title="Chat"/>
-                                <Content activities={activities} />
+                                <Header />
+                                <Content />
                             </div>
                         </div>
                     )
                 }
             }
-
             class Header extends React.Component {
                 render() {
-                    return (
-                        <div className="header">
-                            <div className="fa fa-more"></div>
-                            
-                            <span className="title">{this.props.title}</span>
-
-                            <input
-                                type="text"
-                                className="searchInput"
-                                placeholder="Search ..." />
-                            
-                            <div className="fa fa-search searchIcon"></div>
-                        </div>
-                    )
+                    <div className="header">
+                        <div className="fa fa-more"></div>
+                        <span className="title">Timeline</span>
+                        <input
+                            type="text"
+                            className="searchInput"
+                            placeholder="Search ..." />
+                        <div className="fa fa-search searchIcon"></div>
+                    </div>
                 }
             }
-
-            const activities = [
-            {
-                timestamp: new Date().getTime(),
-                text: "Ate lunch",
-                user: {
-                    id: 1,
-                    name: 'Nate',
-                    avatar: "http://www.croop.cl/UI/twitter/images/doug.jpg"
-                },
-                commnents: [{from: 'Play', text: 'Me too!'}]
-            },
-            {
-                timestamp: new Date().getTime(),
-                text: "Woke up early",
-                user: {
-                    id: 2,
-                    name: 'Play',
-                    avatar: "http://www.croop.cl/UI/twitter/images/doug.jpg"
-                },
-                commnents: [{from: 'Nate', text: 'Jealous!'}]
-            },
-            ]
-
             class Content extends React.Component {
                 render() {
-                    const {activities} = this.props;
                     return (
                         <div className="content">
                             <div className="line"></div>
-                            {/* Timeline item */}
-                            {activities.map((activity) => (
-                                <ActivityItem
-                                activity={activity} />
-                            ))}
-                        </div>
-                    )
-                }
-            }
-
-            class ActivityItem extends React.Component {
-                render() {
-                    const {activity} = this.props;
-                    return (
+                        {/* Timeline item */}
                         <div className="item">
                             <div className="avatar">
-                                <img src={activity.usr.avatar} />
-                                {activity.user.name}
+                                <img src="http://www.croop.cl/UI/twitter/images/doug.jpg" />
+                                Doug
                             </div>
                             <span className="time">
-                                {activity.timestamp}
+                                An hour ago
                             </span>
-                            <p>{activity.text}</p>
+                            <p>Ate lunch</p>
                             <div className="commentCount">
-                                {activity.comments.length}
+                                2
                             </div>
+                        </div>
+                        {/* ... */}
                         </div>
                     )
                 }
