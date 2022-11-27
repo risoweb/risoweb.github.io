@@ -11,7 +11,7 @@
     <body>
         <div id="app"></div>
         <script type="text/babel">
-            const activity = [
+            const activities = [
                 {
                     timestamp: new Date().getTime(),
                     text: "Ate lunch",
@@ -23,7 +23,19 @@
                     comments: [
                         {from: 'Ari', text: 'Me too!'}
                     ]
-                }
+                },
+                {
+                    timestamp: new Date().getTime(),
+                    text: "Woke up",
+                    user: {
+                        id: 2,
+                        name: 'Mite',
+                        avatar: "http://www.croop.cl/UI/twitter/images/doug.jpg"
+                    },
+                    comments: [
+                        {from: 'Ari', text: 'Me too!'}
+                    ]
+                },
             ]
             class App extends React.Component {
                 render() {
@@ -34,7 +46,7 @@
                                 <Header title="Profile" />
                                 <Header title="Settings" />
                                 <Header title="Chat" />
-                                <Content activity={activity} />
+                                <Content activies={activities} />
                             </div>
                         </div>
                     )
@@ -57,11 +69,13 @@
             }
             class Content extends React.Component {
                 render() {
-                    const {activity} = this.props;
+                    const {activities} = this.props;
                     return (
                         <div className="content">
                             <div className="line"></div>
                         {/* Timeline item */}
+                        {activities.map((activity) => {
+                        return (
                         <div className="item">
                             <div className="avatar">
                                 <img src={activity.user.avatar} />
@@ -75,6 +89,8 @@
                                 {activity.comments.length}
                             </div>
                         </div>
+                        );
+                    })}
                         {/* ... */}
                         </div>
                     )
