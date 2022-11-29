@@ -103,25 +103,50 @@
                 }
             }
             class Clock extends React.Component {
+                constructor(props) {
+                    super(props);
+                        this.state = {
+                            date: new Date()
+                        };
+                    }
+                    componentWillUnmount() {
+                    clearInterval(this.timerID);
+                }
+
+                tick() {
+                    this.setState({date: new Date()});
+                }
+
+                getHours() {
+                    return this.state.date.getHours();
+                }
+                getMinutes() {
+                    return this.state.date.getMinutes();
+                }
+                getSeconds() {
+                    return this.state.date.getSeconds();
+                }
+                componentDidMount() {
+                    this.timerID = setInterval(() => this.tick(), 1000);
+                }
                 render() {
-                    const currentTime = new Date(),
-                        hours = currentTime.getHours(),
-                        minutes = currentTime.getMinutes(),
-                        seconds = currentTime.getSeconds(),
-                        ampm = hours >= 12 ? 'pm' : 'am';
                     return (
-                        <div className="clock">
-                            {
-                                hours == 0 ? 12 :
-                                    (hours > 12) ?
-                                        hours - 12 : hours
-                            }:{
-                                minutes > 9 ? minutes : `0${minutes}`
-                            }:{
-                                seconds > 9 ? seconds : `0${seconds}`
-                            } {ampm}
-                        </div>
-                    )
+                        <ul className="nav" ref={(c) => {this.nav = c; }}>
+                            <li className="today">
+                                <Row className="clock" center="xs">
+                                <Row center="xs">
+                                    <span className="hours">{this.getHours()}</span>
+                                    <span>:</span>
+                                    <span className="min">{this.getMinutes()}</span>
+                                    <span className="sec">{this.getSeconds()}</span>
+                                </Row>
+                                </Row>
+                                <Row className="date" center="xs">
+                                    <p className="today-is">{this.state.date.toDateString()}</p>
+                                </Row>
+                            </li>
+                        </ul>
+                    );
                 }
             }
             var mount = document.querySelector('#app');
