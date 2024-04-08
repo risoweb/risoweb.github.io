@@ -40,7 +40,19 @@ label {
   z-index: 3;
   position: fixed;
 }
-
+.label {
+      transform-origin: left center;
+      font-weight: 100;
+      letter-spacing: 0.01em;
+      font-size: 17px;
+      box-sizing: border-box;
+      padding: 10px 15px;
+      display: block;
+      position: absolute;
+      margin-top: -40px;
+      z-index: 2;
+      pointer-events: none;
+}
 .bar {
   display: block;
   background-color: #0799d3;
