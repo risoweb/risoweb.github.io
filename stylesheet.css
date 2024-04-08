@@ -53,6 +53,10 @@ label {
       z-index: 2;
       pointer-events: none;
 }
+  .question {
+    position: relative;
+    padding: 10px 0;
+  }
 .bar {
   display: block;
   background-color: #0799d3;
