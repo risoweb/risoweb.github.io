@@ -45,6 +45,22 @@ fieldset {
  min-width: 0; 
  display: table-cell; 
 } 
+legend { 
+ padding: 0 0 .5em 0; 
+ font-weight: bold; 
+ color: #777; 
+ display: table; 
+}
+.fieldset-wrapper { 
+ padding: 1em; 
+ margin-bottom: 1em; 
+ border: 1px solid #eee; 
+ background-color: #fff; 
+ box-shadow: 0 0 4px rgba(0, 0, 0, 0.25); 
+} 
+:root .fieldset-wrapper { 
+ border: 0; 
+}
   .question {
     position: relative;
     padding: 10px 0;
