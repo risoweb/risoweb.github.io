@@ -177,7 +177,30 @@ input[type="checkbox"]:checked ~ label .bottom {
 input[type="checkbox"]:checked ~ label .middle {
   width: 0;
 }
-
+.form-help { 
+ display: block; 
+ /* hide the help by default, 
+ without hiding it from screen readers */ 
+ position: absolute;
+ overflow: hidden;
+ width: 1px;
+ height: 1px;
+ clip: rect(0 0 0 0);
+} 
+input:focus + .form-help { 
+ padding: .5em; 
+ margin-top: .5em; 
+ border: 1px solid #2a80fa; 
+ border-radius: .25em; 
+ font-style: italic; 
+ color: #737373; 
+ background-color: #fff; 
+ /* override the "hiding" properties: */ 
+ position: static;
+ width: auto;
+ height: auto;
+ crop: none;
+}
 .middle {
   margin: 0 auto;
 }
@@ -190,4 +213,12 @@ input[type="checkbox"]:checked ~ label .middle {
   font-size: 2em;
   z-index: 2;
 }
-
+::-webkit-input-placeholder { 
+ font-style: italic; 
+} 
+:-ms-input-placeholder { 
+ font-style: italic; 
+} 
+::-moz-placeholder { 
+ font-style: italic; 
+} 
