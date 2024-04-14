@@ -64,6 +64,14 @@ legend {
 .field-text { 
  max-width: 20em; 
 } 
+field-text label { 
+ cursor: pointer; 
+} 
+.field-text label, 
+.field-text input { 
+ width: 100%; 
+ box-sizing: border-box; 
+} 
   .question {
     position: relative;
     padding: 10px 0;
