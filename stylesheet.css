@@ -64,10 +64,10 @@ legend {
 .field-text { 
  max-width: 20em; 
 } 
-field-text label { 
+.field-text label { 
  cursor: pointer; 
 } 
-.field-text label, 
+
 .field-text input { 
  padding: .375em .3125em .3125em; 
  border: 1px solid #ccc; 
