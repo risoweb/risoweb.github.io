@@ -40,8 +40,8 @@ label {
 }
 fieldset { 
  border: 0; 
- padding: 20px 0 0 0; 
- margin: 10; 
+ padding: 0.01px 0 0 0; 
+ margin: 0; 
  min-width: 0; 
  display: table-cell; 
 } 
