@@ -69,8 +69,10 @@ field-text label {
 } 
 .field-text label, 
 .field-text input { 
- width: 100%; 
- box-sizing: border-box; 
+ padding: .375em .3125em .3125em; 
+ border: 1px solid #ccc; 
+ border-radius: .25em; 
+ -webkit-appearance: none; 
 } 
   .question {
     position: relative;
