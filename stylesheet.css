@@ -138,7 +138,10 @@ h1 {
 .asideAnchor:hover::after {
   width: 100%;
 }
-
+input, 
+textarea { 
+ font: inherit; 
+}
 input[type="checkbox"] {
   display: none;
 }
