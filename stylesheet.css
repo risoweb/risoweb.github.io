@@ -74,6 +74,11 @@ field-text label {
  border-radius: .25em; 
  -webkit-appearance: none; 
 } 
+.field-text input:focus { 
+ box-shadow: 0 0 .5em rgba(93, 162, 248, 0.5); 
+ border-color: #5da2f8; 
+ outline: 0; 
+} 
   .question {
     position: relative;
     padding: 10px 0;
