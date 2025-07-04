@@ -1,96 +1,148 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
+  <title>Carrossel de Cursos</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Cursos completos em diversas áreas, incluindo criptomoedas, tecnologia e mais.">
-  <title>Nossos Cursos</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+    }
+
+    .swiper {
+      width: 90vw;
+      height: 90vh;
+      margin: 5vh auto;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+      background: white;
+    }
+
+    .swiper-slide {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .swiper-slide img {
+      max-width: 100%;
+      max-height: 60vh;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .slide-title {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .slide-description {
+      font-size: 1rem;
+      text-align: center;
+      margin-top: 10px;
+      max-width: 600px;
+      color: #555;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: #000;
+    }
+
+    .swiper-pagination-bullet-active {
+      background: #000;
+    }
+  </style>
 </head>
 <body>
-  <header class="text-center p-5 bg-dark text-white">
-    <img src="logo-crypto.png" alt="Logo do Curso de Criptomoedas" class="img-fluid my-3" style="width: 200px; height: auto;">
-    <h1>Formação Completa em Criptomoedas</h1>
-    <p>Explore nosso catálogo de cursos e domine novas habilidades!</p>
-    <a href="#inscricao" class="btn btn-warning btn-lg rounded-pill my-3">Conheça Nossos Cursos</a>
-  </header>
 
-  <section class="container my-5">
-    <h2 class="text-center mb-4">Nossos Cursos</h2>
-    <div class="row">
-      <!-- Curso 1: Formação em Criptomoedas -->
-      <div class="col-md-4 col-sm-6 mb-4">
-        <div class="card h-100">
-          <img src="logo-crypto.png" class="card-img-top mx-auto my-3" alt="Logo Criptomoedas" style="width: 150px; height: auto;">
-          <div class="card-body text-center">
-            <h5 class="card-title">Formação em Criptomoedas</h5>
-            <p class="card-text">Aprenda blockchain, Bitcoin e Ethereum com nosso curso prático!</p>
-            <a href="#inscricao" class="btn btn-warning btn-lg rounded-pill">Inscreva-se</a>
-          </div>
-        </div>
+  <!-- Carrossel de Cursos -->
+  <section class="swiper">
+    <div class="swiper-wrapper">
+      <!-- Slide 1 -->
+      <div class="swiper-slide">
+        <img src="https://placehold.co/800x400?text=Curso+1" alt="Curso 1">
+        <div class="slide-title">Curso 1</div>
+        <div class="slide-description">Descrição do curso 1: Aprenda os fundamentos com exemplos práticos e interativos.</div>
       </div>
-      <!-- Curso 2 -->
-      <div class="col-md-4 col-sm-6 mb-4">
-        <div class="card h-100">
-          <img src="curso2.png" class="card-img-top mx-auto my-3" alt="Logo Curso 2" style="width: 150px; height: auto;">
-          <div class="card-body text-center">
-            <h5 class="card-title">Curso 2</h5>
-            <p class="card-text">Desenvolva habilidades essenciais para sua carreira.</p>
-            <a href="#inscricao" class="btn btn-warning btn-lg rounded-pill">Inscreva-se</a>
-          </div>
-        </div>
+
+      <!-- Slide 2 -->
+      <div class="swiper-slide">
+        <img src="https://placehold.co/800x400?text=Curso+2" alt="Curso 2">
+        <div class="slide-title">Curso 2</div>
+        <div class="slide-description">Curso intermediário focado em aplicações reais e projetos completos.</div>
       </div>
-      <!-- Curso 3 -->
-      <div class="col-md-4 col-sm-6 mb-4">
-        <div class="card h-100">
-          <img src="curso3.png" class="card-img-top mx-auto my-3" alt="Logo Curso 3" style="width: 150px; height: auto;">
-          <div class="card-body text-center">
-            <h5 class="card-title">Curso 3</h5>
-            <p class="card-text">Domine técnicas avançadas em sua área de interesse.</p>
-            <a href="#inscricao" class="btn btn-warning btn-lg rounded-pill">Inscreva-se</a>
-          </div>
-        </div>
+
+      <!-- Slide 3 -->
+      <div class="swiper-slide">
+        <img src="https://placehold.co/800x400?text=Curso+3" alt="Curso 3">
+        <div class="slide-title">Curso 3</div>
+        <div class="slide-description">Curso avançado para quem deseja se aprofundar na área.</div>
       </div>
-      <!-- Curso 4 -->
-      <div class="col-md-4 col-sm-6 mb-4">
-        <div class="card h-100">
-          <img src="curso4.png" class="card-img-top mx-auto my-3" alt="Logo Curso 4" style="width: 150px; height: auto;">
-          <div class="card-body text-center">
-            <h5 class="card-title">Curso 4</h5>
-            <p class="card-text">Aprenda com especialistas e pratique em projetos reais.</p>
-            <a href="#inscricao" class="btn btn-warning btn-lg rounded-pill">Inscreva-se</a>
-          </div>
-        </div>
+
+      <!-- Slide 4 a 7 (você pode duplicar conforme necessário) -->
+      <div class="swiper-slide">
+        <img src="https://placehold.co/800x400?text=Curso+4" alt="Curso 4">
+        <div class="slide-title">Curso 4</div>
+        <div class="slide-description">Explore novas técnicas e ferramentas com o curso 4.</div>
       </div>
-      <!-- Curso 5 -->
-      <div class="col-md-4 col-sm-6 mb-4">
-        <div class="card h-100">
-          <img src="curso5.png" class="card-img-top mx-auto my-3" alt="Logo Curso 5" style="width: 150px; height: auto;">
-          <div class="card-body text-center">
-            <h5 class="card-title">Curso 5</h5>
-            <p class="card-text">Torne-se um profissional qualificado na sua área.</p>
-            <a href="#inscricao" class="btn btn-warning btn-lg rounded-pill">Inscreva-se</a>
-          </div>
-        </div>
+
+      <div class="swiper-slide">
+        <img src="https://placehold.co/800x400?text=Curso+5" alt="Curso 5">
+        <div class="slide-title">Curso 5</div>
+        <div class="slide-description">Curso 5 traz conceitos atuais e práticas modernas do mercado.</div>
       </div>
-      <!-- Curso 6 -->
-      <div class="col-md-4 col-sm-6 mb-4">
-        <div class="card h-100">
-          <img src="curso6.png" class="card-img-top mx-auto my-3" alt="Logo Curso 6" style="width: 150px; height: auto;">
-          <div class="card-body text-center">
-            <h5 class="card-title">Curso 6</h5>
-            <p class="card-text">Desenvolva competências para o mercado atual.</p>
-            <a href="#inscricao" class="btn btn-warning btn-lg rounded-pill">Inscreva-se</a>
-          </div>
-        </div>
+
+      <div class="swiper-slide">
+        <img src="https://placehold.co/800x400?text=Curso+6" alt="Curso 6">
+        <div class="slide-title">Curso 6</div>
+        <div class="slide-description">Foco em produtividade e agilidade com o conteúdo do curso 6.</div>
+      </div>
+
+      <div class="swiper-slide">
+        <img src="https://placehold.co/800x400?text=Curso+7" alt="Curso 7">
+        <div class="slide-title">Curso 7</div>
+        <div class="slide-description">Finalizando a jornada com um curso completo e transformador.</div>
       </div>
     </div>
+
+    <!-- Botões de Navegação -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+
+    <!-- Paginação -->
+    <div class="swiper-pagination"></div>
   </section>
 
-  <footer class="text-center p-4 bg-dark text-white">
-    <p>Contato: <a href="mailto:contato@seucurso.com">contato@seucurso.com</a></p>
-    <p>© 2025 Curso de Criptomoedas</p>
-  </footer>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script>
 </body>
 </html>
+
