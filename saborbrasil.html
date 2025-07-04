@@ -1,72 +1,96 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Meu Carrossel com Swiper</title>
-  <!-- Link para o CSS do Swiper -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-  <style>
-    body {
-      font-family: sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-
-    .swiper {
-      width: 100%;
-      height: 300px;
-    }
-
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #eee;
-
-      /* Centraliza o conteúdo */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    img {
-      max-width: 100%;
-      max-height: 100%;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cursos completos em diversas áreas, incluindo criptomoedas, tecnologia e mais.">
+  <title>Nossos Cursos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+  <header class="text-center p-5 bg-dark text-white">
+    <img src="logo-crypto.png" alt="Logo do Curso de Criptomoedas" class="img-fluid my-3" style="width: 200px; height: auto;">
+    <h1>Formação Completa em Criptomoedas</h1>
+    <p>Explore nosso catálogo de cursos e domine novas habilidades!</p>
+    <a href="#inscricao" class="btn btn-warning btn-lg rounded-pill my-3">Conheça Nossos Cursos</a>
+  </header>
 
-  <!-- Estrutura do Swiper -->
-  <section class="swiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="https://placekitten.com/600/300" alt="Gato 1"></div>
-      <div class="swiper-slide"><img src="https://placekitten.com/601/300" alt="Gato 2"></div>
-      <div class="swiper-slide"><img src="https://placekitten.com/602/300" alt="Gato 3"></div>
+  <section class="container my-5">
+    <h2 class="text-center mb-4">Nossos Cursos</h2>
+    <div class="row">
+      <!-- Curso 1: Formação em Criptomoedas -->
+      <div class="col-md-4 col-sm-6 mb-4">
+        <div class="card h-100">
+          <img src="logo-crypto.png" class="card-img-top mx-auto my-3" alt="Logo Criptomoedas" style="width: 150px; height: auto;">
+          <div class="card-body text-center">
+            <h5 class="card-title">Formação em Criptomoedas</h5>
+            <p class="card-text">Aprenda blockchain, Bitcoin e Ethereum com nosso curso prático!</p>
+            <a href="#inscricao" class="btn btn-warning btn-lg rounded-pill">Inscreva-se</a>
+          </div>
+        </div>
+      </div>
+      <!-- Curso 2 -->
+      <div class="col-md-4 col-sm-6 mb-4">
+        <div class="card h-100">
+          <img src="curso2.png" class="card-img-top mx-auto my-3" alt="Logo Curso 2" style="width: 150px; height: auto;">
+          <div class="card-body text-center">
+            <h5 class="card-title">Curso 2</h5>
+            <p class="card-text">Desenvolva habilidades essenciais para sua carreira.</p>
+            <a href="#inscricao" class="btn btn-warning btn-lg rounded-pill">Inscreva-se</a>
+          </div>
+        </div>
+      </div>
+      <!-- Curso 3 -->
+      <div class="col-md-4 col-sm-6 mb-4">
+        <div class="card h-100">
+          <img src="curso3.png" class="card-img-top mx-auto my-3" alt="Logo Curso 3" style="width: 150px; height: auto;">
+          <div class="card-body text-center">
+            <h5 class="card-title">Curso 3</h5>
+            <p class="card-text">Domine técnicas avançadas em sua área de interesse.</p>
+            <a href="#inscricao" class="btn btn-warning btn-lg rounded-pill">Inscreva-se</a>
+          </div>
+        </div>
+      </div>
+      <!-- Curso 4 -->
+      <div class="col-md-4 col-sm-6 mb-4">
+        <div class="card h-100">
+          <img src="curso4.png" class="card-img-top mx-auto my-3" alt="Logo Curso 4" style="width: 150px; height: auto;">
+          <div class="card-body text-center">
+            <h5 class="card-title">Curso 4</h5>
+            <p class="card-text">Aprenda com especialistas e pratique em projetos reais.</p>
+            <a href="#inscricao" class="btn btn-warning btn-lg rounded-pill">Inscreva-se</a>
+          </div>
+        </div>
+      </div>
+      <!-- Curso 5 -->
+      <div class="col-md-4 col-sm-6 mb-4">
+        <div class="card h-100">
+          <img src="curso5.png" class="card-img-top mx-auto my-3" alt="Logo Curso 5" style="width: 150px; height: auto;">
+          <div class="card-body text-center">
+            <h5 class="card-title">Curso 5</h5>
+            <p class="card-text">Torne-se um profissional qualificado na sua área.</p>
+            <a href="#inscricao" class="btn btn-warning btn-lg rounded-pill">Inscreva-se</a>
+          </div>
+        </div>
+      </div>
+      <!-- Curso 6 -->
+      <div class="col-md-4 col-sm-6 mb-4">
+        <div class="card h-100">
+          <img src="curso6.png" class="card-img-top mx-auto my-3" alt="Logo Curso 6" style="width: 150px; height: auto;">
+          <div class="card-body text-center">
+            <h5 class="card-title">Curso 6</h5>
+            <p class="card-text">Desenvolva competências para o mercado atual.</p>
+            <a href="#inscricao" class="btn btn-warning btn-lg rounded-pill">Inscreva-se</a>
+          </div>
+        </div>
+      </div>
     </div>
-    
-    <!-- Botões de navegação -->
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-
-    <!-- Paginador (opcional) -->
-    <div class="swiper-pagination"></div>
   </section>
 
-  <!-- Script do Swiper -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script>
-    // Inicialização do Swiper
-    const swiper = new Swiper('.swiper', {
-      loop: true,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
-  </script>
+  <footer class="text-center p-4 bg-dark text-white">
+    <p>Contato: <a href="mailto:contato@seucurso.com">contato@seucurso.com</a></p>
+    <p>© 2025 Curso de Criptomoedas</p>
+  </footer>
 </body>
 </html>
