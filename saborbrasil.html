@@ -35,3 +35,127 @@
       background-position: center;
       position: relative;
     }
+
+    .slide-content {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 30px;
+      border-radius: 15px;
+      max-width: 80%;
+    }
+
+    .slide-title {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #38bdf8;
+    }
+
+    .slide-description {
+      font-size: 1.1rem;
+      margin-top: 15px;
+      color: #f1f5f9;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: #38bdf8;
+    }
+
+    .swiper-pagination-bullet-active {
+      background: #38bdf8;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container text-center my-4">
+    <h1 class="text-light">🌟 Nossos Cursos</h1>
+    <p class="text-secondary">Explore a jornada de aprendizado em cada etapa</p>
+  </div>
+
+  <!-- Swiper Carousel -->
+  <section class="swiper">
+    <div class="swiper-wrapper">
+      <!-- Slide 1 -->
+      <div class="swiper-slide" style="background-image: url('https://images.unsplash.com/photo-1581090700227-1c611ff28f15');">
+        <div class="slide-content">
+          <h2 class="slide-title">Curso 1</h2>
+          <p class="slide-description">Fundamentos essenciais para iniciantes em tecnologia.</p>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="swiper-slide" style="background-image: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d');">
+        <div class="slide-content">
+          <h2 class="slide-title">Curso 2</h2>
+          <p class="slide-description">Conceitos intermediários aplicados em projetos reais.</p>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="swiper-slide" style="background-image: url('https://images.unsplash.com/photo-1596495577886-d920f1fb7238');">
+        <div class="slide-content">
+          <h2 class="slide-title">Curso 3</h2>
+          <p class="slide-description">Explorando inteligência artificial e automação.</p>
+        </div>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="swiper-slide" style="background-image: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c');">
+        <div class="slide-content">
+          <h2 class="slide-title">Curso 4</h2>
+          <p class="slide-description">Design centrado no usuário e boas práticas de UI/UX.</p>
+        </div>
+      </div>
+
+      <!-- Slide 5 -->
+      <div class="swiper-slide" style="background-image: url('https://images.unsplash.com/photo-1522199755839-a2bacb67c546');">
+        <div class="slide-content">
+          <h2 class="slide-title">Curso 5</h2>
+          <p class="slide-description">Gestão de projetos ágeis com foco em produtividade.</p>
+        </div>
+      </div>
+
+      <!-- Slide 6 -->
+      <div class="swiper-slide" style="background-image: url('https://images.unsplash.com/photo-1543269865-cbf427effbad');">
+        <div class="slide-content">
+          <h2 class="slide-title">Curso 6</h2>
+          <p class="slide-description">Estruturação de banco de dados e modelagem relacional.</p>
+        </div>
+      </div>
+
+      <!-- Slide 7 -->
+      <div class="swiper-slide" style="background-image: url('https://images.unsplash.com/photo-1506765515384-028b60a970df');">
+        <div class="slide-content">
+          <h2 class="slide-title">Curso 7</h2>
+          <p class="slide-description">Finalizando sua jornada com um projeto completo!</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Botões de navegação -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+</html>
