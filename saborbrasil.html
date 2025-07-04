@@ -2,18 +2,19 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Carrossel de Cursos</title>
+  <title>Carrossel com Bootstrap e Swiper</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Swiper CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  
+
   <style>
     body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      background: #f5f5f5;
+      background-color: #0f172a; /* azul escuro */
+      color: #f1f5f9; /* cinza claro */
     }
 
     .swiper {
@@ -22,18 +23,12 @@
       margin: 5vh auto;
       border-radius: 20px;
       overflow: hidden;
-      box-shadow: 0 0 20px rgba(0,0,0,0.2);
-      background: white;
+      background: #1e293b; /* azul mais claro */
     }
 
     .swiper-slide {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      text-align: center;
       padding: 20px;
-      box-sizing: border-box;
     }
 
     .swiper-slide img {
@@ -47,80 +42,52 @@
       font-size: 2rem;
       font-weight: bold;
       margin-top: 20px;
-      text-align: center;
+      color: #38bdf8; /* azul claro */
     }
 
     .slide-description {
       font-size: 1rem;
-      text-align: center;
       margin-top: 10px;
-      max-width: 600px;
-      color: #555;
+      color: #cbd5e1;
     }
 
     .swiper-button-next,
     .swiper-button-prev {
-      color: #000;
+      color: #38bdf8;
     }
 
     .swiper-pagination-bullet-active {
-      background: #000;
+      background: #38bdf8;
     }
   </style>
 </head>
 <body>
 
-  <!-- Carrossel de Cursos -->
+  <div class="container text-center mb-5">
+    <h1 class="text-light mt-4">🌟 Cursos Disponíveis</h1>
+    <p class="text-secondary">Explore nossos cursos incríveis abaixo</p>
+  </div>
+
   <section class="swiper">
     <div class="swiper-wrapper">
       <!-- Slide 1 -->
       <div class="swiper-slide">
         <img src="https://placehold.co/800x400?text=Curso+1" alt="Curso 1">
         <div class="slide-title">Curso 1</div>
-        <div class="slide-description">Descrição do curso 1: Aprenda os fundamentos com exemplos práticos e interativos.</div>
+        <div class="slide-description">Aprenda os fundamentos com exemplos práticos e interativos.</div>
       </div>
 
-      <!-- Slide 2 -->
+      <!-- Slide 2 a 7 (iguais ao anterior) -->
       <div class="swiper-slide">
         <img src="https://placehold.co/800x400?text=Curso+2" alt="Curso 2">
         <div class="slide-title">Curso 2</div>
-        <div class="slide-description">Curso intermediário focado em aplicações reais e projetos completos.</div>
+        <div class="slide-description">Curso intermediário focado em aplicações reais.</div>
       </div>
 
-      <!-- Slide 3 -->
-      <div class="swiper-slide">
-        <img src="https://placehold.co/800x400?text=Curso+3" alt="Curso 3">
-        <div class="slide-title">Curso 3</div>
-        <div class="slide-description">Curso avançado para quem deseja se aprofundar na área.</div>
-      </div>
-
-      <!-- Slide 4 a 7 (você pode duplicar conforme necessário) -->
-      <div class="swiper-slide">
-        <img src="https://placehold.co/800x400?text=Curso+4" alt="Curso 4">
-        <div class="slide-title">Curso 4</div>
-        <div class="slide-description">Explore novas técnicas e ferramentas com o curso 4.</div>
-      </div>
-
-      <div class="swiper-slide">
-        <img src="https://placehold.co/800x400?text=Curso+5" alt="Curso 5">
-        <div class="slide-title">Curso 5</div>
-        <div class="slide-description">Curso 5 traz conceitos atuais e práticas modernas do mercado.</div>
-      </div>
-
-      <div class="swiper-slide">
-        <img src="https://placehold.co/800x400?text=Curso+6" alt="Curso 6">
-        <div class="slide-title">Curso 6</div>
-        <div class="slide-description">Foco em produtividade e agilidade com o conteúdo do curso 6.</div>
-      </div>
-
-      <div class="swiper-slide">
-        <img src="https://placehold.co/800x400?text=Curso+7" alt="Curso 7">
-        <div class="slide-title">Curso 7</div>
-        <div class="slide-description">Finalizando a jornada com um curso completo e transformador.</div>
-      </div>
+      <!-- Adicione mais slides como quiser... -->
     </div>
 
-    <!-- Botões de Navegação -->
+    <!-- Botões -->
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
 
@@ -128,8 +95,12 @@
     <div class="swiper-pagination"></div>
   </section>
 
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
   <script>
     const swiper = new Swiper('.swiper', {
       loop: true,
@@ -145,4 +116,3 @@
   </script>
 </body>
 </html>
-
