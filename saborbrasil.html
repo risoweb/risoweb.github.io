@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Carrossel com Texto Retangular</title>
+  <title>Carrossel Ajustado</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Bootstrap CSS -->
@@ -30,7 +30,6 @@
       display: flex;
       justify-content: flex-end;
       align-items: flex-end;
-      text-align: center;
       background-size: cover;
       background-position: center;
       position: relative;
@@ -39,20 +38,20 @@
     .slide-content {
       background-color: rgba(0, 0, 0, 0.6);
       width: 100%;
-      padding: 30px 20px;
-      margin-bottom: 60px; /* Subiu a caixa do rodapé */
-      /* Bordas arredondadas removidas */
+      padding: 20px 20px; /* ← reduzido */
+      margin-bottom: 60px;
+      text-align: left; /* ← alinhado à esquerda */
     }
 
     .slide-title {
-      font-size: 2rem;
+      font-size: 1.75rem; /* ← diminuído */
       font-weight: bold;
       color: #38bdf8;
       margin-bottom: 10px;
     }
 
     .slide-description {
-      font-size: 1rem;
+      font-size: 0.875rem; /* ← diminuído */
       color: #f1f5f9;
     }
 
