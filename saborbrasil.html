@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Carrossel com Texto Ajustado</title>
+  <title>Carrossel com Texto Retangular</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Bootstrap CSS -->
@@ -40,9 +40,8 @@
       background-color: rgba(0, 0, 0, 0.6);
       width: 100%;
       padding: 30px 20px;
-      border-top-left-radius: 25px;
-      border-top-right-radius: 25px;
-      margin-bottom: 60px; /* ← Dobrado para subir mais */
+      margin-bottom: 60px; /* Subiu a caixa do rodapé */
+      /* Bordas arredondadas removidas */
     }
 
     .slide-title {
@@ -70,7 +69,8 @@
 <body>
 
   <div class="container text-center my-4">
-   
+    <h1 class="text-light">🌟 Nossos Cursos</h1>
+    <p class="text-secondary">Explore a jornada de aprendizado em cada etapa</p>
   </div>
 
   <!-- Swiper Carousel -->
