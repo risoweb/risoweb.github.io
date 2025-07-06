@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Carrossel Ajustado</title>
+  <title>Carrossel com Proporção Áurea</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Bootstrap CSS -->
@@ -28,7 +28,7 @@
 
     .swiper-slide {
       display: flex;
-      justify-content: flex-end;
+      justify-content: flex-start;
       align-items: flex-end;
       background-size: cover;
       background-position: center;
@@ -37,21 +37,23 @@
 
     .slide-content {
       background-color: rgba(0, 0, 0, 0.6);
-      width: 100%;
-      padding: 20px 20px; /* ← reduzido */
+      width: 61.8%; /* proporção áurea */
+      padding: 20px;
       margin-bottom: 60px;
-      text-align: left; /* ← alinhado à esquerda */
+      margin-left: 0; /* colado à esquerda */
+      text-align: left;
+      border-radius: 0;
     }
 
     .slide-title {
-      font-size: 1.75rem; /* ← diminuído */
+      font-size: 1.75rem;
       font-weight: bold;
       color: #38bdf8;
       margin-bottom: 10px;
     }
 
     .slide-description {
-      font-size: 0.875rem; /* ← diminuído */
+      font-size: 0.875rem;
       color: #f1f5f9;
     }
 
