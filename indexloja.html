@@ -21,9 +21,7 @@
 
     .swiper {
       width: 85vw;              
-/* ocupa toda a largura da tela */
       height: calc(100vh - 200px); 
-/* mantém a lógica da altura que vc já usava */
       margin: 50px auto;
       border-radius: 20px;
       overflow: hidden;
@@ -39,29 +37,44 @@
     }
 
     .slide-content {
-      position: absolute;          /* fixa dentro do slide */
-      bottom: 25%;                 /* controla a altura do bloco (aqui você sobe) */
+      position: absolute;          
+      bottom: 25%;                 
       left: 0;
       background-color: rgba(0, 0, 0, 0.6);
-      width: 61.8%;                /* proporção áurea 😉 */
+      width: 61.8%;                
       padding: 10px;
-      text-align: center;          /* centraliza todo o conteúdo interno */
+      text-align: left;            
       border-radius: 0;
-      max-height: 200px;           /* aumentado pra caber o botão */
+      max-height: 100px;           
       overflow: hidden;
     }
 
     .slide-title {
-      font-size: 1.25rem; /* título menor */
+      font-size: 1.25rem;
       font-weight: bold;
       color: #38bdf8;
       margin-bottom: 5px;
     }
 
     .slide-description {
-      font-size: 0.75rem; /* descrição menor */
+      font-size: 0.75rem;
       color: #f1f5f9;
-      margin-bottom: 10px; /* espaço pro botão */
+      margin-bottom: 10px;
+    }
+
+    .text-box {
+      position: absolute;          
+      bottom: 15%;                
+      left: 50%;                  
+      transform: translateX(-50%); 
+      text-align: center;
+    }
+
+    .text-box .btn {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+      display: inline-block;      
+      margin: 0 auto;             
     }
 
     .swiper-button-next,
@@ -70,11 +83,11 @@
     }
 
     .swiper-button-next {
-      right: 5px; /* distância da borda direita */
+      right: 5px;
     }
 
     .swiper-button-prev {
-      left: 5px; /* distância da borda esquerda */
+      left: 5px;
     }
 
     .swiper-pagination-bullet-active {
@@ -88,19 +101,9 @@
       font-size: 0.875rem;
       color: #94a3b8;
     }
-
-    .text-box .btn {
-      font-size: 0.9rem;
-      padding: 8px 16px;
-      display: block;     /* transforma o link em bloco */
-      margin: 10px auto;  /* centraliza horizontalmente */
-      text-align: center; /* garante alinhamento do texto dentro */
-    }
   </style>
 </head>
 <body>
-
-  <!-- Removido título principal da página -->
 
   <!-- Swiper Carousel -->
   <section class="swiper">
@@ -110,9 +113,9 @@
         <div class="slide-content">
           <h3 class="slide-title">Desenvolvedor de Software</h3>
           <p class="slide-description">Aprenda a construir aplicações modernas com código limpo.</p>
-          <div class="text-box">
-            <a href="#" class="btn btn-danger rounded-pill mt-2">Comprar</a>
-          </div>
+        </div>
+        <div class="text-box">
+          <a href="#" class="btn btn-danger rounded-pill mt-2">Comprar</a>
         </div>
       </div>
 
@@ -121,9 +124,9 @@
         <div class="slide-content">
           <h3 class="slide-title">Inteligência Artificial</h3>
           <p class="slide-description">Domine redes neurais e automação com IA moderna.</p>
-          <div class="text-box">
-            <a href="#" class="btn btn-danger rounded-pill mt-2">Comprar</a>
-          </div>
+        </div>
+        <div class="text-box">
+          <a href="#" class="btn btn-danger rounded-pill mt-2">Comprar</a>
         </div>
       </div>
 
@@ -132,9 +135,9 @@
         <div class="slide-content">
           <h3 class="slide-title">Design e Engenharia</h3>
           <p class="slide-description">Conecte criatividade com estrutura técnica.</p>
-          <div class="text-box">
-            <a href="#" class="btn btn-danger rounded-pill mt-2">Comprar</a>
-          </div>
+        </div>
+        <div class="text-box">
+          <a href="#" class="btn btn-danger rounded-pill mt-2">Comprar</a>
         </div>
       </div>
 
@@ -143,9 +146,9 @@
         <div class="slide-content">
           <h3 class="slide-title">Criador de Conteúdo</h3>
           <p class="slide-description">Funil de vendas, redes sociais e presença online.</p>
-          <div class="text-box">
-            <a href="#" class="btn btn-danger rounded-pill mt-2">Comprar</a>
-          </div>
+        </div>
+        <div class="text-box">
+          <a href="#" class="btn btn-danger rounded-pill mt-2">Comprar</a>
         </div>
       </div>
 
@@ -154,9 +157,9 @@
         <div class="slide-content">
           <h3 class="slide-title">Arte Digital</h3>
           <p class="slide-description">Ilustração, animação e criação visual imersiva.</p>
-          <div class="text-box">
-            <a href="#" class="btn btn-danger rounded-pill mt-2">Comprar</a>
-          </div>
+        </div>
+        <div class="text-box">
+          <a href="#" class="btn btn-danger rounded-pill mt-2">Comprar</a>
         </div>
       </div>
 
@@ -165,9 +168,9 @@
         <div class="slide-content">
           <h3 class="slide-title">Marketing Digital</h3>
           <p class="slide-description">Escala, tráfego pago e copywriting.</p>
-          <div class="text-box">
-            <a href="#" class="btn btn-danger rounded-pill mt-2">Comprar</a>
-          </div>
+        </div>
+        <div class="text-box">
+          <a href="#" class="btn btn-danger rounded-pill mt-2">Comprar</a>
         </div>
       </div>
 
@@ -176,9 +179,9 @@
         <div class="slide-content">
           <h3 class="slide-title">Realidade Aumentada</h3>
           <p class="slide-description">Crie experiências imersivas no mundo físico.</p>
-          <div class="text-box">
-            <a href="#" class="btn btn-danger rounded-pill mt-2">Comprar</a>
-          </div>
+        </div>
+        <div class="text-box">
+          <a href="#" class="btn btn-danger rounded-pill mt-2">Comprar</a>
         </div>
       </div>
     </div>
