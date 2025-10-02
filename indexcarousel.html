@@ -39,27 +39,23 @@
     }
 
     .slide-content {
-      background-color: rgba(0, 0, 0, 0.6);
-      width: 61.8%;
-      padding: 10px;
-      margin-bottom: 60px;
-      margin-left: 0;
-      text-align: left;
-      border-radius: 0;
-      max-height: 100px; /* metade da altura típica */
-      overflow: hidden;
-    }
+  position: absolute;          /* fixa dentro do slide */
+  bottom: 25%;                 /* controla a altura do bloco (aqui você sobe) */
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 61.8%;                /* proporção áurea 😉 */
+  padding: 10px;
+  text-align: left;
+  border-radius: 0;
+  max-height: 100px;           /* controla a altura */
+  overflow: hidden;
+}
 
     .slide-title {
       font-size: 1.25rem; /* título menor */
       font-weight: bold;
       color: #38bdf8;
       margin-bottom: 5px;
-  position: absolute;
-  bottom: 30%; /* ajusta a altura da caixa na tela */
-  left: 0;
-  width: 61.8%; /* nossa proporção áurea */
-  padding: 15px;
     }
 
     .slide-description {
