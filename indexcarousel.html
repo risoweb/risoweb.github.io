@@ -17,17 +17,112 @@
       color: #f1f5f9;
       margin: 0;
       padding: 0;
+      font-family: "Avenir Next", "Avenir", sans-serif; /* adaptado do seu CSS anterior */
+    }
+
+    /* Menu Hamburger */
+    #menuToggle {
+      display: block;
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      z-index: 1000;
+      -webkit-user-select: none;
+      user-select: none;
+    }
+
+    #menuToggle input {
+      display: block;
+      width: 40px;
+      height: 32px;
+      position: absolute;
+      top: -7px;
+      left: -5px;
+      cursor: pointer;
+      opacity: 0; /* esconde o checkbox */
+      z-index: 2;
+      -webkit-touch-callout: none;
+    }
+
+    #menuToggle span {
+      display: block;
+      width: 33px;
+      height: 4px;
+      margin-bottom: 5px;
+      position: relative;
+      background: #f1f5f9; /* cor do texto do body */
+      border-radius: 3px;
+      z-index: 1;
+      transform-origin: 4px 0px;
+      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                  background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                  opacity 0.55s ease;
+    }
+
+    #menuToggle span:first-child {
+      transform-origin: 0% 0%;
+    }
+
+    #menuToggle span:nth-last-child(2) {
+      transform-origin: 0% 100%;
+    }
+
+    #menuToggle input:checked ~ span {
+      opacity: 1;
+      transform: rotate(45deg) translate(-2px, -1px);
+      background: #38bdf8; /* cor do tema */
+    }
+
+    #menuToggle input:checked ~ span:nth-last-child(3) {
+      opacity: 0;
+      transform: rotate(0deg) scale(0.2, 0.2);
+    }
+
+    #menuToggle input:checked ~ span:nth-last-child(2) {
+      transform: rotate(-45deg) translate(0, -1px);
+    }
+
+    #menu {
+      position: fixed;
+      width: 240px;
+      height: 100%;
+      margin: -100px 0 0 -50px;
+      padding: 50px;
+      padding-top: 125px;
+      background: #1e293b; /* mesmo fundo do footer */
+      list-style-type: none;
+      -webkit-font-smoothing: antialiased;
+      transform-origin: 0% 0%;
+      transform: translate(-100%, 0);
+      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    }
+
+    #menu li {
+      padding: 10px 0;
+      font-size: 22px;
+    }
+
+    #menu li a {
+      color: #f1f5f9; /* cor do texto do body */
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    #menu li a:hover {
+      color: #38bdf8; /* cor do tema */
+    }
+
+    #menuToggle input:checked ~ #menu {
+      transform: none;
     }
 
     .swiper {
-  width: 85vw;              
-/* ocupa toda a largura da tela */
-  height: calc(100vh - 200px); 
-/* mantém a lógica da altura que vc já usava */
-  margin: 50px auto;
-  border-radius: 20px;
-  overflow: hidden;
-}
+      width: 85vw;              
+      height: calc(100vh - 200px); 
+      margin: 50px auto;
+      border-radius: 20px;
+      overflow: hidden;
+    }
 
     .swiper-slide {
       display: flex;
@@ -39,28 +134,44 @@
     }
 
     .slide-content {
-  position: absolute;          /* fixa dentro do slide */
-  bottom: 25%;                 /* controla a altura do bloco (aqui você sobe) */
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.6);
-  width: 61.8%;                /* proporção áurea 😉 */
-  padding: 10px;
-  text-align: left;
-  border-radius: 0;
-  max-height: 100px;           /* controla a altura */
-  overflow: hidden;
-}
+      position: absolute;          
+      bottom: 25%;                 
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.6);
+      width: 61.8%;                
+      padding: 10px;
+      text-align: left;            
+      border-radius: 0;
+      max-height: 100px;           
+      overflow: hidden;
+    }
 
     .slide-title {
-      font-size: 1.25rem; /* título menor */
+      font-size: 1.25rem;
       font-weight: bold;
       color: #38bdf8;
       margin-bottom: 5px;
     }
 
     .slide-description {
-      font-size: 0.75rem; /* descrição menor */
+      font-size: 0.75rem;
       color: #f1f5f9;
+      margin-bottom: 10px;
+    }
+
+    .text-box {
+      position: absolute;          
+      bottom: 15%;                
+      left: 50%;                  
+      transform: translateX(-50%); 
+      text-align: center;
+    }
+
+    .text-box .btn {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+      display: inline-block;      
+      margin: 0 auto;             
     }
 
     .swiper-button-next,
@@ -68,13 +179,13 @@
       color: #38bdf8;
     }
 
-.swiper-button-next {
-  right: 5px; /* distância da borda direita */
-}
+    .swiper-button-next {
+      right: 5px;
+    }
 
-.swiper-button-prev {
-  left: 5px; /* distância da borda esquerda */
-}
+    .swiper-button-prev {
+      left: 5px;
+    }
 
     .swiper-pagination-bullet-active {
       background: #38bdf8;
@@ -87,18 +198,22 @@
       font-size: 0.875rem;
       color: #94a3b8;
     }
-.text-box .btn {
-  font-size: 0.9rem;
-  padding: 8px 16px;
-  display: block;     /* transforma o link em bloco */
-  margin: 10px auto;  /* centraliza horizontalmente */
-  text-align: center; /* garante alinhamento do texto dentro */
-}
   </style>
 </head>
 <body>
-
-  <!-- Removido título principal da página -->
+  <!-- Menu Hamburger -->
+  <nav id="menuToggle">
+    <input type="checkbox" />
+    <span></span>
+    <span></span>
+    <span></span>
+    <ul id="menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Cursos</a></li>
+      <li><a href="#">Sobre</a></li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+  </nav>
 
   <!-- Swiper Carousel -->
   <section class="swiper">
@@ -106,14 +221,12 @@
       <!-- Slide 1 -->
       <div class="swiper-slide" style="background-image: url('https://risoweb.github.io/file_00000000bf5461f7bb0f2ad75bdc08d4.png');">
         <div class="slide-content">
-          <h3 class="slide-title">Desenvolvedor de Software</h3>
-          <p class="slide-description">Aprenda a construir aplicações modernas com código limpo.</p>
-
+          <h3 class="slide-title">Full Stack Dev</h3>
+          <p class="slide-description">Soluções completas para desenvolvimento Web, App e Desktop.</p>
         </div>
-<div class="text-box">
-  
-  <a href="#" class="btn btn-danger rounded-pill mt-2">Comprar</a>
-</div>
+        <div class="text-box">
+          <a href="#" class="btn btn-success rounded-pill mt-2">Comprar</a>
+        </div>
       </div>
 
       <!-- Slide 2 -->
@@ -121,6 +234,9 @@
         <div class="slide-content">
           <h3 class="slide-title">Inteligência Artificial</h3>
           <p class="slide-description">Domine redes neurais e automação com IA moderna.</p>
+        </div>
+        <div class="text-box">
+          <a href="#" class="btn btn-success rounded-pill mt-2">Comprar</a>
         </div>
       </div>
 
@@ -130,6 +246,9 @@
           <h3 class="slide-title">Design e Engenharia</h3>
           <p class="slide-description">Conecte criatividade com estrutura técnica.</p>
         </div>
+        <div class="text-box">
+          <a href="#" class="btn btn-success rounded-pill mt-2">Comprar</a>
+        </div>
       </div>
 
       <!-- Slide 4 -->
@@ -137,6 +256,9 @@
         <div class="slide-content">
           <h3 class="slide-title">Criador de Conteúdo</h3>
           <p class="slide-description">Funil de vendas, redes sociais e presença online.</p>
+        </div>
+        <div class="text-box">
+          <a href="#" class="btn btn-success rounded-pill mt-2">Comprar</a>
         </div>
       </div>
 
@@ -146,6 +268,9 @@
           <h3 class="slide-title">Arte Digital</h3>
           <p class="slide-description">Ilustração, animação e criação visual imersiva.</p>
         </div>
+        <div class="text-box">
+          <a href="#" class="btn btn-success rounded-pill mt-2">Comprar</a>
+        </div>
       </div>
 
       <!-- Slide 6 -->
@@ -154,6 +279,9 @@
           <h3 class="slide-title">Marketing Digital</h3>
           <p class="slide-description">Escala, tráfego pago e copywriting.</p>
         </div>
+        <div class="text-box">
+          <a href="#" class="btn btn-success rounded-pill mt-2">Comprar</a>
+        </div>
       </div>
 
       <!-- Slide 7 -->
@@ -161,6 +289,9 @@
         <div class="slide-content">
           <h3 class="slide-title">Realidade Aumentada</h3>
           <p class="slide-description">Crie experiências imersivas no mundo físico.</p>
+        </div>
+        <div class="text-box">
+          <a href="#" class="btn btn-success rounded-pill mt-2">Comprar</a>
         </div>
       </div>
     </div>
